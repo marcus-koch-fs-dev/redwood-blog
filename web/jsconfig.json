@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "noEmit": true,
     "allowJs": true,
     "esModuleInterop": true,
@@ -34,4 +35,13 @@
     "../types",
     "./types"
   ]
+=======
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    },
+    "jsx": "preserve",
+  },
+  "include": ["src/**/*"]
+>>>>>>> feat/chapter5
 }
