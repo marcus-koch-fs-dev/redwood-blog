@@ -1,6 +1,12 @@
 datasource db {
+<<<<<<< HEAD
   provider = "postgresql"
   url      = env("DATABASE_URL")
+=======
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+>>>>>>> feat/chapter5
 }
 
 generator client {
@@ -31,4 +37,8 @@ model User {
   salt                String
   resetToken          String?
   resetTokenExpiresAt DateTime?
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> feat/chapter5

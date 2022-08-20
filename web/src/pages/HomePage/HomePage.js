@@ -1,5 +1,8 @@
 import { MetaTags } from '@redwoodjs/web'
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
 import ArticlesCell from 'src/components/ArticlesCell'
 
 const HomePage = () => {

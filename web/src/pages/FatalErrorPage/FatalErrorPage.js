@@ -52,7 +52,10 @@ export default RedwoodDevFatalErrorPage ||
             `,
         }}
       />
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
       <section>
         <h1>
           <span>Something went wrong</span>

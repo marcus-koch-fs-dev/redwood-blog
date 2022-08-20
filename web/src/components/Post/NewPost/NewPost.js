@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 import { navigate, routes } from '@redwoodjs/router'
 import { useMutation } from '@redwoodjs/web'
 import { toast } from '@redwoodjs/web/toast'
 
+=======
+import { useMutation } from '@redwoodjs/web'
+import { toast } from '@redwoodjs/web/toast'
+import { navigate, routes } from '@redwoodjs/router'
+>>>>>>> feat/chapter5
 import PostForm from 'src/components/Post/PostForm'
 
 const CREATE_POST_MUTATION = gql`
@@ -18,9 +24,12 @@ const NewPost = () => {
       toast.success('Post created')
       navigate(routes.posts())
     },
+<<<<<<< HEAD
     onError: (error) => {
       toast.error(error.message)
     },
+=======
+>>>>>>> feat/chapter5
   })
 
   const onSave = (input) => {

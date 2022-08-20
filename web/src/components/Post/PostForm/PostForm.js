@@ -7,6 +7,15 @@ import {
   Submit,
 } from '@redwoodjs/forms'
 
+<<<<<<< HEAD
+=======
+const formatDatetime = (value) => {
+  if (value) {
+    return value.replace(/:\d{2}\.\d{3}\w/, '')
+  }
+}
+
+>>>>>>> feat/chapter5
 const PostForm = (props) => {
   const onSubmit = (data) => {
     props.onSave(data, props?.post?.id)
@@ -29,7 +38,10 @@ const PostForm = (props) => {
         >
           Title
         </Label>
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
         <TextField
           name="title"
           defaultValue={props.post?.title}
@@ -37,7 +49,10 @@ const PostForm = (props) => {
           errorClassName="rw-input rw-input-error"
           validation={{ required: true }}
         />
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
         <FieldError name="title" className="rw-field-error" />
 
         <Label
@@ -47,7 +62,10 @@ const PostForm = (props) => {
         >
           Body
         </Label>
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
         <TextField
           name="body"
           defaultValue={props.post?.body}
@@ -55,7 +73,10 @@ const PostForm = (props) => {
           errorClassName="rw-input rw-input-error"
           validation={{ required: true }}
         />
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
         <FieldError name="body" className="rw-field-error" />
 
         <div className="rw-button-group">

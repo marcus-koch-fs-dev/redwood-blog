@@ -35,7 +35,10 @@ export default () => (
             `,
       }}
     />
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat/chapter5
     <section>
       <h1>
         <span>404 Page Not Found</span>

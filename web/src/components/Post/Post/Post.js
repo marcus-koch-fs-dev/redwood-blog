@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 import humanize from 'humanize-string'
 
 import { Link, routes, navigate } from '@redwoodjs/router'
 import { useMutation } from '@redwoodjs/web'
 import { toast } from '@redwoodjs/web/toast'
+=======
+import { useMutation } from '@redwoodjs/web'
+import { toast } from '@redwoodjs/web/toast'
+import { Link, routes, navigate } from '@redwoodjs/router'
+>>>>>>> feat/chapter5
 
 const DELETE_POST_MUTATION = gql`
   mutation DeletePostMutation($id: Int!) {
@@ -12,6 +18,7 @@ const DELETE_POST_MUTATION = gql`
   }
 `
 
+<<<<<<< HEAD
 const formatEnum = (values) => {
   if (values) {
     if (Array.isArray(values)) {
@@ -23,6 +30,8 @@ const formatEnum = (values) => {
   }
 }
 
+=======
+>>>>>>> feat/chapter5
 const jsonDisplay = (obj) => {
   return (
     <pre>
@@ -33,11 +42,17 @@ const jsonDisplay = (obj) => {
 
 const timeTag = (datetime) => {
   return (
+<<<<<<< HEAD
     datetime && (
       <time dateTime={datetime} title={datetime}>
         {new Date(datetime).toUTCString()}
       </time>
     )
+=======
+    <time dateTime={datetime} title={datetime}>
+      {new Date(datetime).toUTCString()}
+    </time>
+>>>>>>> feat/chapter5
   )
 }
 
@@ -51,9 +66,12 @@ const Post = ({ post }) => {
       toast.success('Post deleted')
       navigate(routes.posts())
     },
+<<<<<<< HEAD
     onError: (error) => {
       toast.error(error.message)
     },
+=======
+>>>>>>> feat/chapter5
   })
 
   const onDeleteClick = (id) => {
@@ -98,13 +116,22 @@ const Post = ({ post }) => {
         >
           Edit
         </Link>
+<<<<<<< HEAD
         <button
           type="button"
+=======
+        <a
+          href="#"
+>>>>>>> feat/chapter5
           className="rw-button rw-button-red"
           onClick={() => onDeleteClick(post.id)}
         >
           Delete
+<<<<<<< HEAD
         </button>
+=======
+        </a>
+>>>>>>> feat/chapter5
       </nav>
     </>
   )

@@ -44,8 +44,12 @@
   Style
 */
 
+<<<<<<< HEAD
 .rw-scaffold,
 .rw-toast {
+=======
+.rw-scaffold {
+>>>>>>> feat/chapter5
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
@@ -62,6 +66,7 @@
   padding-bottom: 1rem;
 }
 .rw-segment {
+<<<<<<< HEAD
   border-radius: 0.5rem;
   border-width: 1px;
   border-color: #e5e7eb;
@@ -85,6 +90,12 @@
   background-clip: content-box;
   border: 3px solid transparent;
   border-radius: 10px;
+=======
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+>>>>>>> feat/chapter5
 }
 .rw-segment-header {
   background-color: #e2e8f0;
@@ -102,6 +113,7 @@
 .rw-link:hover {
   color: #2b6cb0;
 }
+<<<<<<< HEAD
 .rw-forgot-link {
   font-size: 0.75rem;
   color: #a0aec0;
@@ -112,6 +124,8 @@
   font-size: 0.75rem;
   color: #4299e1;
 }
+=======
+>>>>>>> feat/chapter5
 .rw-heading {
   font-weight: 600;
 }
@@ -129,16 +143,22 @@
   color: #1a202c;
   text-decoration: underline;
 }
+<<<<<<< HEAD
 .rw-cell-error {
   font-size: 90%;
   font-weight: 600;
 }
+=======
+>>>>>>> feat/chapter5
 .rw-form-wrapper {
   box-sizing: border-box;
   font-size: 0.875rem;
   margin-top: -1rem;
 }
+<<<<<<< HEAD
 .rw-cell-error,
+=======
+>>>>>>> feat/chapter5
 .rw-form-error-wrapper {
   padding: 1rem;
   background-color: #fff5f5;
@@ -159,7 +179,10 @@
   list-style-position: inside;
 }
 .rw-button {
+<<<<<<< HEAD
   border: none;
+=======
+>>>>>>> feat/chapter5
   color: #718096;
   cursor: pointer;
   display: flex;
@@ -172,7 +195,10 @@
   letter-spacing: 0.025em;
   border-radius: 0.25rem;
   line-height: 2;
+<<<<<<< HEAD
   border: 0;
+=======
+>>>>>>> feat/chapter5
 }
 .rw-button:hover {
   background-color: #718096;
@@ -238,12 +264,16 @@
   width: 100%;
   padding: 0.5rem;
   border-width: 1px;
+<<<<<<< HEAD
   border-style: solid;
+=======
+>>>>>>> feat/chapter5
   border-color: #e2e8f0;
   color: #4a5568;
   border-radius: 0.25rem;
   outline: none;
 }
+<<<<<<< HEAD
 .rw-check-radio-item-none {
   color: #4a5568;
 }
@@ -264,6 +294,12 @@
   margin-left: 0;
   margin-right: 0.5rem;
   margin-top: 0.25rem;
+=======
+.rw-input[type='checkbox'],
+.rw-input[type='radio'] {
+  width: 1rem;
+  margin-left: 0;
+>>>>>>> feat/chapter5
 }
 .rw-input:focus {
   border-color: #a0aec0;
@@ -272,6 +308,7 @@
   border-color: #c53030;
   color: #c53030;
 }
+<<<<<<< HEAD
 
 .rw-input-error:focus {
   outline: none;
@@ -279,6 +316,8 @@
   box-shadow: 0 0 5px #c53030;
 }
 
+=======
+>>>>>>> feat/chapter5
 .rw-field-error {
   display: block;
   margin-top: 0.25rem;
@@ -288,7 +327,11 @@
   color: #c53030;
 }
 .rw-table-wrapper-responsive {
+<<<<<<< HEAD
   overflow-x: auto;
+=======
+  overflow-x: scroll;
+>>>>>>> feat/chapter5
 }
 .rw-table-wrapper-responsive .rw-table {
   min-width: 48rem;
@@ -302,6 +345,7 @@
 .rw-table td {
   padding: 0.75rem;
 }
+<<<<<<< HEAD
 .rw-table td {
   background-color: #ffffff;
   color: #1a202c;
@@ -311,6 +355,10 @@
   background-color: #f7fafc;
 }
 .rw-table thead tr {
+=======
+.rw-table thead tr {
+  background-color: #e2e8f0;
+>>>>>>> feat/chapter5
   color: #4a5568;
 }
 .rw-table th {
@@ -318,7 +366,10 @@
   text-align: left;
 }
 .rw-table thead th {
+<<<<<<< HEAD
   background-color: #e2e8f0;
+=======
+>>>>>>> feat/chapter5
   text-align: left;
 }
 .rw-table tbody th {
@@ -330,8 +381,17 @@
   }
 }
 .rw-table tbody tr {
+<<<<<<< HEAD
   border-top-width: 1px;
 }
+=======
+  background-color: #f7fafc;
+  border-top-width: 1px;
+}
+.rw-table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+>>>>>>> feat/chapter5
 .rw-table input {
   margin-left: 0;
 }
@@ -366,6 +426,7 @@
 .rw-text-center {
   text-align: center;
 }
+<<<<<<< HEAD
 .rw-login-container {
   display: flex;
   align-items: center;
@@ -383,4 +444,23 @@
   font-size: 90%;
   text-align: center;
   flex-basis: 100%;
+=======
+.rw-slide-up {
+  animation: slideUp 0.5s 1 ease;
+  animation-fill-mode: forwards;
+  overflow-y: hidden;
+}
+@keyframes slideUp {
+  100% {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.rw-input-error:focus {
+  outline: none;
+  border-color: #c53030;
+  box-shadow: 0 0 5px #c53030;
+>>>>>>> feat/chapter5
 }

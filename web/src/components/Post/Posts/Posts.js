@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 import humanize from 'humanize-string'
 
 import { Link, routes } from '@redwoodjs/router'
 import { useMutation } from '@redwoodjs/web'
 import { toast } from '@redwoodjs/web/toast'
+=======
+import { useMutation } from '@redwoodjs/web'
+import { toast } from '@redwoodjs/web/toast'
+import { Link, routes } from '@redwoodjs/router'
+>>>>>>> feat/chapter5
 
 import { QUERY } from 'src/components/Post/PostsCell'
 
@@ -16,6 +22,7 @@ const DELETE_POST_MUTATION = gql`
 
 const MAX_STRING_LENGTH = 150
 
+<<<<<<< HEAD
 const formatEnum = (values) => {
   if (values) {
     if (Array.isArray(values)) {
@@ -27,6 +34,8 @@ const formatEnum = (values) => {
   }
 }
 
+=======
+>>>>>>> feat/chapter5
 const truncate = (text) => {
   let output = text
   if (text && text.length > MAX_STRING_LENGTH) {
@@ -41,11 +50,17 @@ const jsonTruncate = (obj) => {
 
 const timeTag = (datetime) => {
   return (
+<<<<<<< HEAD
     datetime && (
       <time dateTime={datetime} title={datetime}>
         {new Date(datetime).toUTCString()}
       </time>
     )
+=======
+    <time dateTime={datetime} title={datetime}>
+      {new Date(datetime).toUTCString()}
+    </time>
+>>>>>>> feat/chapter5
   )
 }
 
@@ -58,9 +73,12 @@ const PostsList = ({ posts }) => {
     onCompleted: () => {
       toast.success('Post deleted')
     },
+<<<<<<< HEAD
     onError: (error) => {
       toast.error(error.message)
     },
+=======
+>>>>>>> feat/chapter5
     // This refetches the query on the list page. Read more about other ways to
     // update the cache over here:
     // https://www.apollographql.com/docs/react/data/mutations/#making-all-other-cache-updates
@@ -109,14 +127,23 @@ const PostsList = ({ posts }) => {
                   >
                     Edit
                   </Link>
+<<<<<<< HEAD
                   <button
                     type="button"
+=======
+                  <a
+                    href="#"
+>>>>>>> feat/chapter5
                     title={'Delete post ' + post.id}
                     className="rw-button rw-button-small rw-button-red"
                     onClick={() => onDeleteClick(post.id)}
                   >
                     Delete
+<<<<<<< HEAD
                   </button>
+=======
+                  </a>
+>>>>>>> feat/chapter5
                 </nav>
               </td>
             </tr>

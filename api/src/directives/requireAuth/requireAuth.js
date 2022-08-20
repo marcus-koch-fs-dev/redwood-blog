@@ -14,7 +14,12 @@ export const schema = gql`
 
 const validate = ({ directiveArgs }) => {
   const { roles } = directiveArgs
+<<<<<<< HEAD
   applicationRequireAuth({ roles })
+=======
+
+  applicationRequireAuth({ roles: roles })
+>>>>>>> feat/chapter5
 }
 
 const requireAuth = createValidatorDirective(schema, validate)

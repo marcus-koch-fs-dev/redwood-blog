@@ -3,6 +3,7 @@
   "workspaces": {
     "packages": [
       "api",
+<<<<<<< HEAD
       "web",
       "packages/*"
     ]
@@ -16,6 +17,19 @@
   },
   "engines": {
     "node": ">=14.19 <=16.x",
+=======
+      "web"
+    ]
+  },
+  "devDependencies": {
+    "@redwoodjs/core": "2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "@redwoodjs/eslint-config"
+  },
+  "engines": {
+    "node": ">=14.17 <=16.x",
+>>>>>>> feat/chapter5
     "yarn": ">=1.15"
   },
   "prisma": {

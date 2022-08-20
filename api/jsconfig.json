@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "noEmit": true,
     "allowJs": true,
     "esModuleInterop": true,
@@ -31,4 +32,12 @@
     "../.redwood/types/includes/api-*",
     "../types"
   ]
+=======
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*", "../.redwood/index.d.ts"]
+>>>>>>> feat/chapter5
 }
