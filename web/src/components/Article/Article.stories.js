@@ -12,7 +12,6 @@ export const full = () => {
 
 export const summary = () => {
     return <Article article={ARTICLE} summary={true} />
-
 }
 
 export default { title: 'Components/Article' }
