@@ -1,18 +1,84 @@
-# Redwood Tutorial App
+# 🌲 Redwood Blog
 
-This repo represents the final state of the app created during the [Redwood Tutorial](https://redwoodjs.com/tutorial).
-It is meant to be a starting point for those working on the second half of the Tutorial, starting at the [Intermission](https://redwoodjs.com/docs/tutorial/intermission).
+This project is a test implementation using the [RedwoodJS](https://redwoodjs.com/) framework.
 
-This repo contains much more styling than the one we built together in the tutorial, but is functionally identical.
+It demonstrates how to set up a simple blog with Redwood, exploring its features such as GraphQL API, React front end, Prisma ORM, and built-in developer tools.
 
-## Setup
+---
 
-The [tutorial itself](https://redwoodjs.com/docs/tutorial/chapter1/prerequisites) contains instructions for getting this repo up and running, but here is a summary of the commands:
+## 📦 Installation and Execution
+
+To install and run the project locally, follow these steps:
 
 ```bash
-git clone https://github.com/redwoodjs/redwood-tutorial
-cd redwood-tutorial
-yarn install
-yarn rw prisma migrate dev
-yarn rw dev
+git clone https://github.com/marcus-koch-fs-dev/redwood-blog.git
+cd redwood-blog
+npm install
+npm run dev
 ```
+
+Then open [http://localhost:8910](http://localhost:8910) in your browser.
+
+---
+
+## ⚙️ Environment Variables
+
+RedwoodJS uses `.env` files for configuration. Common examples:
+
+```env
+# Database connection (Prisma)
+DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
+
+# API host/port
+API_HOST=localhost
+API_PORT=8911
+
+# Web host/port
+WEB_HOST=localhost
+WEB_PORT=8910
+```
+
+> ℹ️ Adjust values according to your local setup. For production, set secure values.
+
+---
+
+## ▶️ Available Commands
+
+| Command             | Description                                 |
+| ------------------- | ------------------------------------------- |
+| `npm run dev`       | Starts the Redwood development environment  |
+| `npm run build`     | Builds the app for production               |
+| `npm run lint`      | Runs ESLint for code checking               |
+| `npm run test`      | Runs the Redwood test suite                 |
+| `npm run storybook` | Runs Storybook for UI component development |
+| `npm run console`   | Opens the Redwood interactive console       |
+
+---
+
+## 🧭 Project Structure (simplified)
+
+```text
+.
+├── api/              # GraphQL API side (Prisma, SDLs, services)
+├── web/              # Frontend side (React components, pages, routes)
+├── scripts/          # Redwood CLI scripts
+├── package.json      # Dependencies & scripts
+├── redwood.toml      # Redwood config
+└── README.md
+```
+
+---
+
+## 🛠 Tech Stack
+
+* RedwoodJS 🌲
+* React ⚛️
+* GraphQL 🔺
+* Prisma ORM 🗄️
+* Storybook 📖
+
+---
+
+## 📄 License
+
+MIT – for learning and testing purposes.
